@@ -3,7 +3,7 @@ import json
 import matplotlib.pyplot as plt
 
 TOPIC = "21231"
-BROKER = "lab9.alumchat.lol:9092"
+BROKER = "iot.redesuvg.cloud:9092"
 
 temperaturas = []
 humedades = []
@@ -24,7 +24,7 @@ print(f"Consumer escuchando en {TOPIC}...")
 print("Presiona Ctrl+C para detener\n")
 
 plt.ion()  # Modo interactivo
-fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(10, 8))
+fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(6, 4))
 
 try:
     for mensaje in consumer:

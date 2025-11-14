@@ -1,7 +1,7 @@
 from kafka import KafkaProducer
 import sys
 
-BROKER = "lab9.alumchat.lol:9092"
+BROKER = "iot.redesuvg.cloud:9092"
 
 try:
     print(f"Intentando conectar a {BROKER}...")

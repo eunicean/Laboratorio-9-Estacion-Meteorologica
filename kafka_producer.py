@@ -5,7 +5,7 @@ import random
 from sensor_sim import generar_datos
 
 TOPIC = "21231"  # numero de carnet
-BROKER = "lab9.alumchat.lol:9092"
+BROKER = "iot.redesuvg.cloud:9092"
 
 producer = KafkaProducer(
     bootstrap_servers=[BROKER],
@@ -26,7 +26,7 @@ try:
         # Envía el mensaje y obtiene el futuro
         future = producer.send(TOPIC, value=data, key=b'sensor1')
         
-        # Espera confirmación (opcional pero útil para debugging)
+        # Espera confirmación, esto lo pusimos porque la conexion no funcionaba la primera vez jeje
         record_metadata = future.get(timeout=10)
         
         contador += 1
