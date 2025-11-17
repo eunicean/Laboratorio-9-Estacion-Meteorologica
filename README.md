@@ -1,5 +1,5 @@
-# Laboratorio-9-Estacion-Meteorologica
-Laboratorio 9 IoT: Estación Meteorológica
+# Ejrcicio en clase 5 Estacion Meteorologica
+Ejercico en clase 5 IoT: Estación Meteorológica
 
 ### Integrantes
 - Eunice Mata, 21231
@@ -11,5 +11,5 @@ Laboratorio 9 IoT: Estación Meteorológica
 ### Secciones
 - 3.1 [Simulación de un Sensor](sensor_sim.py)
 - 3.2 [Envío de Datos al Server Edge](kafka_producer.py)
-- 3.3 [Consumir y Desplegar Datos Meteorológicos]()
-- 3.4 [IoT en Entornos con Restricciones]()
+- 3.3 [Consumir y Desplegar Datos Meteorológicos](kafka_consumer.py)
+- 3.4 [IoT en Entornos con Restricciones](3.4/)
